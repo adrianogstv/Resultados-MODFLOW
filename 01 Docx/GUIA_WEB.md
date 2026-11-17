@@ -4,6 +4,8 @@ Repositorio: https://github.com/adrianogstv/Resultados-MODFLOW
 
 Web actual: https://wpc-kcb-evaluaciones-cifradas.saltymars15.chatgpt.site/
 
+Para los pasos de publicación, el texto listo para usar en Codex y la alternativa de GitHub Pages, consultar [Publicar desde GitHub](PUBLICAR_DESDE_GITHUB.md).
+
 ## Qué se conserva aquí
 
 Una copia del frontend y de todos los recursos cifrados de la publicación existente, con hashes de integridad. No es una regeneración científica ni una actualización con las entregas locales posteriores. Se conserva el catálogo publicado, incluidas sus limitaciones numéricas.

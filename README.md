@@ -6,6 +6,8 @@ Código y recursos cifrados del visor de resultados **WPC KCB**.
 
 **[Guía de la web y reconstrucción](01%20Docx/GUIA_WEB.md)**
 
+**[Cómo publicar desde este repositorio: Sites y GitHub Pages](01%20Docx/PUBLICAR_DESDE_GITHUB.md)**
+
 El frontend está en `00 Code/visor`; las instrucciones en `01 Docx`; los parámetros públicos y recursos cifrados en `02 Input`. Las reconstrucciones locales se guardan en `03 Output`.
 
 ```powershell

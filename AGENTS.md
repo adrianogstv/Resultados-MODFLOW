@@ -7,3 +7,7 @@
 - Conservar cifrado y no guardar contraseñas, claves ni modelos nativos en Git.
 - El constructor debe validar los840 archivos y generar solo la web bajo dist; publicar únicamente ese directorio.
 - Las modificaciones documentales no disparan el despliegue automático. Tras cambios de código/recursos, comprobar Actions y la URL pública.
+
+## Publicación reutilizable
+- Para elegir alojamiento de otros dashboards, leer 01 Docx/PUBLICAR_DASHBOARDS_MULTIPLATAFORMA.md. Preguntar el proveedor solo si no está decidido; usar cuentas del usuario y no OpenAI Sites por defecto.
+- La elección de otro destino para otro dashboard no autoriza cambiar el alojamiento vigente de este visor.

@@ -2,7 +2,7 @@
 
 Repositorio: https://github.com/adrianogstv/Resultados-MODFLOW
 
-Web actual: https://wpc-kcb-evaluaciones-cifradas.saltymars15.chatgpt.site/
+Web principal: https://adrianogstv.github.io/Resultados-MODFLOW/
 
 Para los pasos de publicación, el texto listo para usar en Codex y la alternativa de GitHub Pages, consultar [Publicar desde GitHub](PUBLICAR_DESDE_GITHUB.md).
 
@@ -29,7 +29,7 @@ Requiere Python3.9 o posterior, solo biblioteca estándar. Desde la raíz del re
 python -B "00 Code/herramientas/preparar_publicacion.py"
 ```
 
-El comando crea una carpeta nueva en03 Output. Dentro quedan el ZIP cifrado ensamblado, `dist/`, la configuración `.openai/hosting.json` y una verificación. No se borran archivos ni se sobrescriben versiones anteriores. Se comprueban840 archivos y sus hashes.
+El comando crea una carpeta nueva en03 Output. Dentro quedan el ZIP cifrado ensamblado, `dist/` y una verificación. El constructor ya no lee ni copia configuración de Sites. No se borran archivos ni se sobrescriben versiones anteriores. Se comprueban840 archivos y sus hashes.
 
 Para probar la carpeta dist generada:
 
@@ -39,11 +39,13 @@ python -m http.server 8000 --directory "03 Output/PUBLICACION_FECHA_HORA/dist"
 
 Abrir http://localhost:8000. El cifrado web requiere localhost o HTTPS; abrir index.html con file:// no es equivalente. La contraseña se introduce solamente en el visor. No escribirla en código, README, commits, variables públicas ni workflows.
 
-## GitHub y Sites son pasos distintos
+## Alojamiento migrado a GitHub Pages
 
-GitHub conserva el código y el historial. Sites mantiene el enlace publicado. Este repositorio no activa una publicación automática, no cambia la audiencia y no habilita GitHub Pages. Para actualizar Sites se reconstruye una nueva carpeta de publicación, se revisa y se usa el flujo de publicación conservando el project_id del Site existente. Las credenciales de publicación se gestionan fuera de Git.
+GitHub conserva el código y sus recursos, ejecuta el workflow y aloja la web. La publicación se activa con cambios de código/recursos en main o manualmente desde Actions. Los cambios documentales no despliegan.
 
-Los cuatro archivos de aplicación/cifrado/catálogo se cotejaron con la web viva el17/11/2026. El HTML original conserva la interfaz sin los scripts que la plataforma puede añadir al servirlo. La reconstrucción conserva los bytes del frontend de origen y de los recursos cifrados.
+La configuración histórica de Sites se preserva archivada en .openai/hosting.json; no tiene un project_id activo y no interviene en la construcción. No utilizarla para crear ni actualizar Sites. Las instrucciones vigentes están en PUBLICAR_DESDE_GITHUB.md.
+
+La migración conserva los bytes del frontend y de los recursos cifrados originales, con verificación de integridad; la contraseña no se ha cambiado ni almacenado.
 
 ## Actualizar resultados en el futuro
 

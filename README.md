@@ -6,7 +6,7 @@ Código y recursos cifrados del visor de resultados **WPC KCB**.
 
 **[Guía de la web y reconstrucción](01%20Docx/GUIA_WEB.md)**
 
-**[Cómo publicar desde este repositorio: Sites y GitHub Pages](01%20Docx/PUBLICAR_DESDE_GITHUB.md)**
+**[Cómo publicar y actualizar en GitHub Pages](01%20Docx/PUBLICAR_DESDE_GITHUB.md)**
 
 El frontend está en `00 Code/visor`; las instrucciones en `01 Docx`; los parámetros públicos y recursos cifrados en `02 Input`. Las reconstrucciones locales se guardan en `03 Output`.
 
@@ -21,3 +21,7 @@ GitHub conserva el código, los recursos cifrados y el alojamiento mediante GitH
 Esta migración conserva los resultados de la publicación respaldada; no incorpora entregas científicas locales posteriores. La antigua configuración de Sites queda archivada y ya no se usa para reconstruir ni desplegar.
 
 No incluye archivos nativos MODFLOW ni figuras/tablas descifradas. Los datos cifrados se conservan en34 partes pequeñas con un manifiesto SHA-256 para reconstruirlos sin descargar recursos externos.
+
+## Publicar otros dashboards
+
+[Guía reutilizable para Claude, Codex y usuarios: GitHub Pages, Cloudflare Pages, Netlify, Vercel y servidor propio](01%20Docx/PUBLICAR_DASHBOARDS_MULTIPLATAFORMA.md). Incluye elección del destino, preparación, publicación, verificación y un prompt para reutilizar. Los agentes encuentran la entrada en AGENTS.md y CLAUDE.md.

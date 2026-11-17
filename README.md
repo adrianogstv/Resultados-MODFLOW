@@ -2,6 +2,14 @@
 
 Código y recursos cifrados del visor de resultados **WPC KCB**.
 
+También sirve como guía para que compañeros publiquen sus propios dashboards en cuentas bajo su control.
+
+**Empieza aquí: [paso a paso para compañeros, actualizaciones y límites de GitHub](01%20Docx/PASO_A_PASO_PARA_COMPANEROS.md).**
+
+Cada dashboard nuevo debe tener su propio repositorio y datos: esta guía no requiere copiar los resultados WPC. La web de este repositorio conserva su configuración actual.
+
+**Retiro de OpenAI Sites:** [estado pendiente y pasos para eliminar solo el sitio antiguo](01%20Docx/RETIRAR_SITIO_ANTIGUO_OPENAI.md).
+
 **Web en GitHub Pages:** https://adrianogstv.github.io/Resultados-MODFLOW/
 
 **[Guía de la web y reconstrucción](01%20Docx/GUIA_WEB.md)**

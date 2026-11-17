@@ -1,0 +1,4 @@
+# Keep published frontend bytes identical to the SHA-256 manifest on every OS.
+"00 Code/visor/**" -text
+"02 Input/publicacion/crypto.json" -text
+*.bin binary

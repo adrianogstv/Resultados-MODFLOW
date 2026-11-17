@@ -1,0 +1,17 @@
+03 Output/
+dist/
+node_modules/
+__pycache__/
+.env
+.env.*
+*.pem
+*.key
+*.hds
+*.cbc
+*.bgt
+*.bas
+*.bcf
+*.dis
+*.nam
+*.rdac
+*.rfem

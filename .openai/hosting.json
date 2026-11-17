@@ -1,6 +1,10 @@
 {
-  "project_id": "appgprj_6adb901106488191aff5c0d1a12199f7",
-  "static": {
-    "directory": "dist"
-  }
+  "archived": true,
+  "note": "Historical Sites configuration, preserved without deleting files. Do not use for publishing.",
+  "previous_configuration": {
+    "project_id": "appgprj_6adb901106488191aff5c0d1a12199f7",
+    "static": {"directory": "dist"}
+  },
+  "current_hosting": "GitHub Pages",
+  "site_url": "https://adrianogstv.github.io/Resultados-MODFLOW/"
 }

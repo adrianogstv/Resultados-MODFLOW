@@ -40,7 +40,6 @@ def main():
         if not f.is_file() or f.stat().st_size!=item['size'] or digest(f)!=item['sha256']:raise ValueError('Archivo web modificado: '+item['path'])
     actual={f.relative_to(dist).as_posix() for f in dist.rglob('*') if f.is_file()}
     if actual!={v['path'] for v in mf['files']}:raise ValueError('Archivos adicionales o faltantes en dist.')
-    (out/'.openai').mkdir();shutil.copy2(R/'.openai/hosting.json',out/'.openai/hosting.json')
-    (out/'VERIFICACION.json').write_text(json.dumps({'status':'PASS','files':len(actual),'bytes':sum(v['size'] for v in mf['files']),'password_required_for_build':False,'decrypted_files':0,'deployed':False,'site_id':'appgprj_6adb901106488191aff5c0d1a12199f7'},indent=2),encoding='utf8')
+    (out/'VERIFICACION.json').write_text(json.dumps({'status':'PASS','files':len(actual),'bytes':sum(v['size'] for v in mf['files']),'password_required_for_build':False,'decrypted_files':0,'deployed':False,'hosting':'GitHub Pages','site_url':'https://adrianogstv.github.io/Resultados-MODFLOW/'},indent=2),encoding='utf8')
     print('READY',out);print('Abrir con HTTP en localhost o HTTPS; la publicación sigue siendo un paso separado.')
 if __name__=='__main__':main()

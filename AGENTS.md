@@ -1,0 +1,9 @@
+# Publicación del visor
+
+- Alojamiento vigente: GitHub Pages, https://adrianogstv.github.io/Resultados-MODFLOW/.
+- Flujo: .github/workflows/publicar-pages.yml. Publicar por push a main de código/recursos o manualmente desde Actions.
+- No usar Sites ni crear un Site nuevo. .openai/hosting.json es un archivo histórico archivado, no configuración activa.
+- Orden:00 Code,01 Docx,02 Input,03 Output. No borrar ni mover archivos.
+- Conservar cifrado y no guardar contraseñas, claves ni modelos nativos en Git.
+- El constructor debe validar los840 archivos y generar solo la web bajo dist; publicar únicamente ese directorio.
+- Las modificaciones documentales no disparan el despliegue automático. Tras cambios de código/recursos, comprobar Actions y la URL pública.
